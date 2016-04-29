@@ -50,7 +50,7 @@
 
 <body>
     <div class="main-wrapper">
-        
+
         <!-- =========================
              PRELOADER
         ============================== -->
@@ -65,9 +65,113 @@
         <!-- =========================
              HEADER
         ============================== -->
-        <header class="header" id="top" data-stellar-background-ratio="0.5">
-            <!-- Background Overlay -->
-            <div class="overlay">
+        <header class="header slider" id="top">
+            
+                <!-- =========================================
+                    Full Slider
+                ========================================== -->
+                <div id="slides">
+                    <ul class="slides-container">
+                        
+                        <!-- Slide n.1 -->
+                        <li>
+                            <!-- Background Overlay -->    
+                            <div class="overlay">
+                                <!-- Intro Section 1 -->
+                                <div class="container vmiddle">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="hero-section text-center">
+                                                    
+                                                    <!-- Welcome - Hero Message -->
+                                                    <h1 class="text-white">Innovative & Modern Template<span class="slider-text"> Crafted with Love for Startups</span></h1>
+                                                    <p class="text-white hidden-xs">Present your startup in stunning way with SmartMvp.</p>
+                                                    
+                                                    <div class="btn-box">
+                                                        <a href="#about" class="btn btn-ghost scrollto hidden-xs">Learn More</a>
+                                                        <a href="#canvas-bg" class="btn btn-color scrollto"><i class="icon arrow_carrot-2dwnn_alt"></i>Try it for Free</a>
+                                                    </div>
+
+                                            </div><!-- /End Intro-Section -->
+                                        </div><!-- /End Col -->
+                                    </div><!-- /End Row -->
+                                </div><!-- /End Container Hero-Section -->
+                                        
+                                <!-- Background Image 1 -->
+                                <img src="assets/images/hero-placeholder.jpg" alt="">
+                            </div>
+                                                                
+                        </li><!-- /End Slide n.1 -->
+                                
+                                
+                        <!-- Slide n.2 -->
+                        <li>
+                            <!-- Background Overlay -->   
+                            <div class="overlay">
+                                <!-- Intro Section 2 -->
+                                <div class="container vmiddle">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="hero-section text-center">
+                                                    
+                                                    <!-- Welcome - Hero Message -->
+                                                    <h1 class="text-white">Get your Landing Page Carefully<span class="slider-text"> Designed and Ready to Go</span></h1>
+                                                    <p class="text-white hidden-xs">Get connected anytime, anywhere.</p>
+                                                    
+                                                    <div class="btn-box">
+                                                        <a href="#about" class="btn btn-ghost scrollto hidden-xs">Learn More</a>
+                                                        <a href="#mobile-download" class="btn btn-color scrollto"><i class="icon icon_cloud-download_alt"></i>Download Now</a>
+                                                    </div>
+
+                                            </div><!-- /End Intro-Section -->
+                                        </div><!-- /End Col -->
+                                    </div><!-- /End Row -->
+                                </div><!-- /End Container Hero-Section -->
+                                        
+                                <!-- Background Image 2 -->
+                                <img src="assets/images/hero-placeholder.jpg" alt="">
+                            </div>
+                                    
+                        </li><!-- /End Slide n.2 -->
+                                
+                                
+                        <!-- Slide n.3 -->
+                        <li>
+                            <!-- Background Overlay -->   
+                            <div class="overlay">
+                                <!-- Intro Section 3 -->
+                                <div class="container vmiddle">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="hero-section text-center">
+                                                    
+                                                    <!-- Welcome - Hero Message -->
+                                                    <h1 class="text-white">Achieve Better Marketing Results <span class="slider-text">with Clean &amp; Beautiful Design</span></h1>
+                                                    <p class="text-white hidden-xs">Your starting point for building successful software products.</p>
+                                                    
+                                                    <!-- Learn More & Video Buttons -->
+                                                    <div class="btn-box">
+                                                        <a href="#about" class="btn btn-ghost scrollto hidden-xs">Learn More</a>
+                                                        <!-- Video Lightbox on Click -->
+                                                        <a href="http://youtu.be/SZEflIVnhH8" data-type="youtube" class="btn btn-color venobox"><i class="icon arrow_triangle-right_alt"></i>Play video</a>
+                                                    </div>
+
+                                            </div><!-- /End Intro-Section -->
+                                        </div><!-- /End Col -->
+                                    </div><!-- /End Row -->
+                                </div><!-- /End Container Hero-Section -->
+                                        
+                                <!-- Background Image 3-->
+                                <img src="assets/images/hero-placeholder.jpg" alt="">
+                            </div>
+                                    
+                        </li><!-- /End Slide n.3 -->
+
+                                
+                    </ul><!-- /End Slides Container -->
+                            
+                </div> <!-- /End Full-Slider -->            
+
 
                 <!-- =========================================
                      Navigation
@@ -107,8 +211,10 @@
                                         <li><a href="#pricing" title="" class="scrollto">Pricing</a></li>
                                         <li><a href="#testimonials" title="" class="scrollto">Testimonials</a></li>
                                         <li><a href="#team" title="" class="scrollto">Team</a></li>
-                                        <!-- Go to Download -->
-                                        <li><a class="btn btn-nav btn-signup scrollto" href="#mobile-download">Download the App</a></li> 
+                                        <li><a href="#mobile-download" title="" class="scrollto">Mobile</a></li>
+                                        <!-- Login and Signup Modal on click -->
+                                        <li><a class="btn btn-nav" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Login</a></li>
+                                        <li><a class="btn btn-nav btn-color" data-toggle="modal" href="javascript:void(0)" onclick="openRegisterModal();">Sign Up</a></li> 
                                     </ul>
                                 </div><!-- /End Navbar-Collapse -->
                             </div><!-- /End Col -->
@@ -118,37 +224,80 @@
 
 
                 <!-- =========================================
-                     Hero-Section
-                ========================================== -->
-                <div class="container vmiddle hero-app">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="hero-section">
-                                
-                                <!-- Welcome - Hero Message -->
-                                <h1 class="text-white">Get your Landing Page Carefully Designed and Ready to Go</h1>
-                                <p class="text-white">Get connected anytime, anywhere.</p>
-                                
-                                <!-- Learn More & Video Buttons -->
-                                <div class="btn-box">
-                                    <a href="#about" class="btn btn-ghost scrollto">Learn More</a>
-                                    <a href="#mobile-download" class="btn btn-color scrollto"><i class="icon icon_cloud-download_alt"></i>Download the App</a>
+                     Login/Signup Bootstrap Modal
+                ==========================================  -->
+                <div class="modal fade login" id="loginModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            
+                            <!-- Modal-Header -->
+                            <div class="modal-header">
+                                <!-- Close Button -->
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                    <i class="icon icon_close_alt2"></i>
+                                </button>
+                                <!-- Modal-Header Title-->
+                                <h4 class="modal-title">Sign in to <span>Smartmvp</span></h4>
+                                <p class="modal-subtitle">Enter your email and password</p>
+                            </div><!-- /End Modal-Header -->
+
+                            <!-- Modal-Body Content -->
+                            <div class="modal-body">  
+                                <div class="box">
+                                     <div class="content">
+                                        <!-- Login Form -->
+                                        <div class="loginBox">
+                                            <form id="login-modal" role="form">
+                                                <!-- Success/Alert Notification -->
+                                                <p class="lm-success"><i class="icon icon_check_alt2"></i> <strong>Congratulation! Login modal validation is working. Implement your code.</strong></p>
+                                                <p class="lm-failed"><i class="icon icon_close_alt2"></i><strong> Something went wrong! Insert correct value.</strong></p>
+                                                <!-- Input Fields -->
+                                                <input id="lm-email" class="form-control input-lg" type="text" placeholder="Email" name="lm-email" required>
+                                                <input id="lm-password" class="form-control input-lg" type="password" placeholder="Password" name="lm-password" required>
+                                                <!-- Login Button -->
+                                                <button class="btn btn-color">Login</button>
+                                            </form>
+                                        </div><!-- /End Login Form -->
+                                     </div>
+                                </div><!-- /End Login Form Box -->
+                                <div class="box">
+                                    <!-- Signup Form -->
+                                    <div class="content registerBox" style="display:none;">
+                                        <form id="signup-modal" role="form">
+                                            <!-- Success/Alert Notification -->
+                                            <p class="sm-success"><i class="icon icon_check_alt2"></i> <strong>Congratulation! Signup modal validation is working. Implement your code.</strong></p>
+                                            <p class="sm-failed"><i class="icon icon_close_alt2"></i><strong> Something went wrong! Insert correct value.</strong></p>
+                                            <!-- Input Fields -->
+                                            <input id="sm-email" class="form-control input-lg" type="text" placeholder="Email" name="sm-email" required>
+                                            <input id="sm-password" class="form-control input-lg" type="password" placeholder="Password" name="sm-password">
+                                            <input id="sm-confirm" class="form-control input-lg" type="password" placeholder="Repeat Password" name="sm-confirm">
+                                            <!-- Signup Button -->
+                                            <button class="btn btn-color">Create Account</button>
+                                        </form>
+                                        
+                                    </div><!-- /End Signup Form -->
+                                </div><!-- /End Signup Form Box -->
+                            </div><!-- /End Modal-Body -->
+
+                            <!-- Modal-Footer -->
+                            <div class="modal-footer">
+                                <!-- Login-Footer. Redirect to Signup-Modal-->
+                                <div class="forgot login-footer">
+                                    <span>Don't have an account? 
+                                         <a href="javascript: showRegisterForm();">Sign up.</a>
+                                    </span>
                                 </div>
-                                
-                            </div><!-- /End Intro-Section -->
-                        </div><!-- /End Col -->
-                        <!-- App Showcase Image -->
-                        <div class="col-sm-6 hidden-xs">
-                            <div class="app-box">
-                                <img src="assets/images/devices.png" alt="" class="img-responsive">
-                            </div>
-                        </div>
-
-                    </div><!-- /End Row -->
-                </div><!-- /End Container Hero-Section -->
-
-
-            </div><!-- /End Background Overlay -->
+                                <!-- Signup-Footer. Redirect to Login-Modal -->
+                                <div class="forgot register-footer" style="display:none">
+                                     <span>Already have an account?</span>
+                                     <a href="javascript: showLoginForm();">Login</a>
+                                </div>
+                            </div><!-- /End Modal-Footer -->      
+                          
+                        </div><!-- /End Modal Content -->
+                    </div><!-- /End Modal Dialog -->
+                </div><!-- /End Modal -->
+                                   
         </header>
         <!-- =========================
              /END HEADER
@@ -1082,7 +1231,7 @@
             </div><!-- /End Container -->
         </footer>
 
-    </div>
+    </div><!-- /End Main Wrapper -->
 
     <!-- =========================
          SCRIPTS 
@@ -1093,10 +1242,11 @@
     <script src="assets/js/plugins/modernizr.custom.min.js"></script>
     <script src="assets/js/plugins/plugins.min.js"></script>
     <script src="assets/js/plugins/twitter/tweetie.min.js"></script>
+    <script src="assets/js/plugins/slider/jquery.superslides.min.js"></script>
     <!-- Custom Script -->
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/plugins/slider/slider.js"></script>
 
     
-
 </body>
 </html>
